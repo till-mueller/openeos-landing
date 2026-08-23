@@ -1,0 +1,37 @@
+# Self-hosted / airgapped deployment for OpenEOS Landing.
+#
+# No Traefik, no ACME/Let's Encrypt, no external "frontend" network —
+# publishes the app directly on a host port.
+#
+# NEXT_PUBLIC_API_URL / NEXT_PUBLIC_APP_URL / NEXT_PUBLIC_DOCS_URL below are
+# not baked into this image at build time — the published ghcr.io image
+# bakes sentinel tokens instead, and the container's entrypoint
+# (docker-entrypoint.sh) rewrites them to whatever you set here on every
+# container start.
+#
+# Airgap flow:
+#   1. On a machine with internet access:
+#        docker pull ghcr.io/openeos-project/openeos-landing:latest
+#        docker save -o openeos-landing.tar ghcr.io/openeos-project/openeos-landing:latest
+#   2. Copy the tar to the offline host and load it:
+#        docker load -i openeos-landing.tar
+#   3. docker compose -f docker-compose.airgap.yml up -d
+
+services:
+  landing:
+    image: ${LANDING_IMAGE:-ghcr.io/openeos-project/openeos-landing:latest}
+    container_name: openeos-landing
+    restart: unless-stopped
+    ports:
+      - "3003:3000"
+    environment:
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:3000}
+      NEXT_PUBLIC_APP_URL: ${NEXT_PUBLIC_APP_URL:-http://localhost:3001}
+      NEXT_PUBLIC_DOCS_URL: ${NEXT_PUBLIC_DOCS_URL:-http://localhost:3002}
+      IMPRINT_NAME: ${IMPRINT_NAME:-}
+      IMPRINT_STREET: ${IMPRINT_STREET:-}
+      IMPRINT_CITY: ${IMPRINT_CITY:-}
+      IMPRINT_COUNTRY: ${IMPRINT_COUNTRY:-Deutschland}
+      IMPRINT_EMAIL: ${IMPRINT_EMAIL:-hello@openeos.de}
+      IMPRINT_PHONE: ${IMPRINT_PHONE:-}
+      IMPRINT_VAT_ID: ${IMPRINT_VAT_ID:-}
