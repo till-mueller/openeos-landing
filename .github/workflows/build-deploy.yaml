@@ -91,12 +91,15 @@ jobs:
           cache-to: type=gha,mode=max
           # NEXT_PUBLIC_* vars must be present at `next build` time — they're
           # inlined into the client bundle. These are non-secret (visible in
-          # the browser anyway), so hardcoding the production URLs here is
-          # fine. To override per environment, switch to ${{ vars.* }}.
+          # the browser anyway). The three URL vars bake the sentinel tokens
+          # the Dockerfile defaults to, not hardcoded domains —
+          # docker-entrypoint.sh rewrites them to the real runtime values on
+          # container start, so the published image works for any
+          # deployment domain, not just the one baked at CI time.
           build-args: |
-            NEXT_PUBLIC_APP_URL=https://app.openeos.de
-            NEXT_PUBLIC_API_URL=https://api.openeos.de
-            NEXT_PUBLIC_DOCS_URL=https://docs.openeos.de
+            NEXT_PUBLIC_APP_URL=__RUNTIME_NEXT_PUBLIC_APP_URL__
+            NEXT_PUBLIC_API_URL=__RUNTIME_NEXT_PUBLIC_API_URL__
+            NEXT_PUBLIC_DOCS_URL=__RUNTIME_NEXT_PUBLIC_DOCS_URL__
             NEXT_PUBLIC_CONTACT_EMAIL=hello@openeos.de
             NEXT_PUBLIC_DEMO_EMAIL=hello@openeos.de
 

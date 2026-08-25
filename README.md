@@ -65,6 +65,23 @@ docker push ghcr.io/openeos-project/openeos-landing:latest
 docker compose up -d
 ```
 
+### Airgapped / Self-Hosted Deployment
+
+For a closed network (no Traefik, no ACME, no public DNS) use `docker-compose.airgap.yml`:
+
+```bash
+docker pull ghcr.io/openeos-project/openeos-landing:latest
+docker save -o openeos-landing.tar ghcr.io/openeos-project/openeos-landing:latest
+# copy openeos-landing.tar to the offline host, then:
+docker load -i openeos-landing.tar
+NEXT_PUBLIC_API_URL=http://<api-host>:3000 \
+NEXT_PUBLIC_APP_URL=http://<web-host>:3001 \
+NEXT_PUBLIC_DOCS_URL=http://<docs-host>:3002 \
+docker compose -f docker-compose.airgap.yml up -d
+```
+
+`NEXT_PUBLIC_API_URL`/`APP_URL`/`DOCS_URL` are normally inlined into the client bundle at build time, but the published image bakes sentinel tokens instead of real domains — `docker-entrypoint.sh` rewrites them to the runtime values above on every container start, so the same pulled image works against any deployment without a rebuild.
+
 ### Automatisches Deployment (CI/CD)
 
 Bei jedem Push auf `main` wird automatisch:
