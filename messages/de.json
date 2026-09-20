@@ -454,20 +454,40 @@
       "title": "4. Hosting bei IONOS SE",
       "content": "Diese Website wird bei der IONOS SE, Elgendorfer Str. 57, 56410 Montabaur, gehostet. Beim Aufruf der Website erhebt und speichert unser Hoster automatisch Server-Logfiles, die Ihr Browser übermittelt (u.a. IP-Adresse, Datum und Uhrzeit der Anfrage, aufgerufene Seite, Browsertyp und -version). Mit IONOS besteht ein Vertrag zur Auftragsverarbeitung gemäß Art. 28 DSGVO, der IONOS dazu verpflichtet, die Daten unserer Websitebesucher ausschließlich nach unseren Weisungen und zu den vertraglich vereinbarten Zwecken zu verarbeiten und angemessen zu schützen."
     },
+    "appHosting": {
+      "title": "5. Hosting der Anwendung (app.openeos.de)",
+      "content": "Die OpenEOS-Anwendung und ihre Datenbanken werden bei der Hetzner Online GmbH (Industriestr. 25, 91710 Gunzenhausen, Deutschland) in deutschen Rechenzentren betrieben. Mit Hetzner besteht ein Vertrag zur Auftragsverarbeitung gemäß Art. 28 DSGVO."
+    },
+    "paymentProviders": {
+      "title": "6. Zahlungsdienstleister",
+      "content": "Zur Abwicklung von Zahlungen setzen unsere Kunden (Veranstalter) je nach Konfiguration folgende Dienstleister ein: SumUp (SumUp Payments Limited, Irland), Stripe (Stripe Payments Europe Ltd., Irland) und PayPal (PayPal (Europe) S.à r.l. et Cie, S.C.A., Luxemburg). Dabei werden die zur Zahlungsabwicklung erforderlichen Daten an den jeweiligen Anbieter übermittelt; es gelten deren Datenschutzbestimmungen."
+    },
+    "fiscalization": {
+      "title": "7. Fiskalisierung (Technische Sicherheitseinrichtung)",
+      "content": "Zur Erfüllung der Kassensicherungsverordnung (KassenSichV) werden Belegdaten (Betrag, Steuersatz, Zahlungsart, Zeitpunkt) zur Signatur an die Cloud-TSE der fiskaly GmbH (Zollhof 8, 90443 Nürnberg) übermittelt. Es werden keine Namen oder sonstigen personenbezogenen Daten von Käufern übermittelt. Mit fiskaly besteht ein Vertrag zur Auftragsverarbeitung gemäß Art. 28 DSGVO."
+    },
+    "emailService": {
+      "title": "8. E-Mail-Versand",
+      "content": "Transaktionale E-Mails (z. B. Registrierung, Belege) werden über unseren SMTP-Dienstleister versandt. Dabei wird Ihre E-Mail-Adresse verarbeitet."
+    },
+    "support": {
+      "title": "9. Support über Telegram",
+      "content": "Unser Support kann freiwillig über Telegram kontaktiert werden. Dabei fallen Inhalte und Metadaten bei Telegram an; es gelten die Datenschutzbestimmungen von Telegram."
+    },
     "ssl": {
-      "title": "5. SSL-/TLS-Verschlüsselung",
+      "title": "10. SSL-/TLS-Verschlüsselung",
       "content": "Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile Ihres Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile."
     },
     "storage": {
-      "title": "6. Speicherdauer",
+      "title": "11. Speicherdauer",
       "content": "Sofern innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Kontaktanfragen löschen wir, sobald diese abschließend bearbeitet sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Daten aus einem Kundenkonto werden für die Dauer der Vertragsbeziehung sowie darüber hinaus entsprechend der handels- und steuerrechtlichen Aufbewahrungsfristen (in der Regel 6 bzw. 10 Jahre) gespeichert."
     },
     "rights": {
-      "title": "7. Ihre Rechte",
+      "title": "12. Ihre Rechte",
       "content": "Sie haben jederzeit das Recht:\n• Auskunft über Ihre bei uns gespeicherten Daten zu erhalten\n• Diese Daten berichtigen oder löschen zu lassen\n• Die Verarbeitung einzuschränken\n• Der Verarbeitung zu widersprechen\n• Ihre Daten in einem übertragbaren Format zu erhalten\n• Eine Beschwerde bei einer Aufsichtsbehörde einzureichen"
     },
     "changes": {
-      "title": "8. Änderungen",
+      "title": "13. Änderungen",
       "content": "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung."
     }
   },

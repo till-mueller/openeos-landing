@@ -122,6 +122,41 @@ function PrivacyContent({
 
       <section className="mb-8">
         <h2 className="text-xl font-semibold text-primary mb-4">
+          {t("appHosting.title")}
+        </h2>
+        <p className="text-tertiary">{t("appHosting.content")}</p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold text-primary mb-4">
+          {t("paymentProviders.title")}
+        </h2>
+        <p className="text-tertiary">{t("paymentProviders.content")}</p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold text-primary mb-4">
+          {t("fiscalization.title")}
+        </h2>
+        <p className="text-tertiary">{t("fiscalization.content")}</p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold text-primary mb-4">
+          {t("emailService.title")}
+        </h2>
+        <p className="text-tertiary">{t("emailService.content")}</p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold text-primary mb-4">
+          {t("support.title")}
+        </h2>
+        <p className="text-tertiary">{t("support.content")}</p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold text-primary mb-4">
           {t("ssl.title")}
         </h2>
         <p className="text-tertiary">{t("ssl.content")}</p>

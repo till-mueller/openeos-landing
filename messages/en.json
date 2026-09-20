@@ -454,20 +454,40 @@
       "title": "4. Hosting with IONOS SE",
       "content": "This website is hosted by IONOS SE, Elgendorfer Str. 57, 56410 Montabaur, Germany. When you access the website, our host automatically collects and stores server logfiles transmitted by your browser (including IP address, date and time of the request, page requested, browser type and version). We have a data processing agreement with IONOS pursuant to Art. 28 GDPR, which obliges IONOS to process the data of our website visitors solely on our instructions and for the contractually agreed purposes, and to protect it appropriately."
     },
+    "appHosting": {
+      "title": "5. Hosting of the application (app.openeos.de)",
+      "content": "The OpenEOS application and its databases are operated at Hetzner Online GmbH (Industriestr. 25, 91710 Gunzenhausen, Germany) in German data centers. We have a data processing agreement with Hetzner pursuant to Art. 28 GDPR."
+    },
+    "paymentProviders": {
+      "title": "6. Payment service providers",
+      "content": "To process payments, our customers (organizers) use the following providers depending on their configuration: SumUp (SumUp Payments Limited, Ireland), Stripe (Stripe Payments Europe Ltd., Ireland) and PayPal (PayPal (Europe) S.à r.l. et Cie, S.C.A., Luxembourg). The data required for payment processing is transmitted to the respective provider; their respective privacy policies apply."
+    },
+    "fiscalization": {
+      "title": "7. Fiscalization (technical security system)",
+      "content": "To comply with the German Cash Security Ordinance (KassenSichV), receipt data (amount, tax rate, payment method, time) is transmitted to the cloud TSE of fiskaly GmbH (Zollhof 8, 90443 Nuremberg) for signing. No names or other personal data of buyers is transmitted. We have a data processing agreement with fiskaly pursuant to Art. 28 GDPR."
+    },
+    "emailService": {
+      "title": "8. Email delivery",
+      "content": "Transactional emails (e.g. registration, receipts) are sent via our SMTP provider. Your email address is processed for this purpose."
+    },
+    "support": {
+      "title": "9. Support via Telegram",
+      "content": "Our support can be contacted voluntarily via Telegram. Content and metadata accrue at Telegram; Telegram's privacy policy applies."
+    },
     "ssl": {
-      "title": "5. SSL/TLS encryption",
+      "title": "10. SSL/TLS encryption",
       "content": "For security reasons and to protect the transmission of confidential content, such as requests you send to us as the site operator, this website uses SSL/TLS encryption. You can recognize an encrypted connection by the fact that the address line of your browser changes from „http://“ to „https://“ and by the lock icon in your browser's address bar."
     },
     "storage": {
-      "title": "6. Storage duration",
+      "title": "11. Storage duration",
       "content": "Unless a more specific storage period is stated within this privacy policy, your personal data will remain with us until the purpose for the data processing no longer applies. We delete contact inquiries once they have been fully processed, provided no statutory retention obligations apply. Data from a customer account is stored for the duration of the contractual relationship and beyond, in accordance with commercial and tax law retention periods (generally 6 or 10 years)."
     },
     "rights": {
-      "title": "7. Your rights",
+      "title": "12. Your rights",
       "content": "You always have the right to:\n• Receive information about your data stored by us\n• Have this data corrected or deleted\n• Restrict processing\n• Object to processing\n• Receive your data in a transferable format\n• File a complaint with a supervisory authority"
     },
     "changes": {
-      "title": "8. Changes",
+      "title": "13. Changes",
       "content": "We reserve the right to adapt this privacy policy so that it always complies with current legal requirements or to implement changes to our services in the privacy policy. The new privacy policy will then apply to your next visit."
     }
   },
