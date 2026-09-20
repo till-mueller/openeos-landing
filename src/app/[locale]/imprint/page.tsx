@@ -57,6 +57,25 @@ function ImprintContent({ data, locale }: { data: ImprintData; locale: string })
   const phoneLabel = locale === "de" ? "Telefon" : "Phone";
   const vatLabel = locale === "de" ? "Umsatzsteuer-ID" : "VAT ID";
 
+  const missing = !data.name || !data.street || !data.city;
+  if (missing) {
+    console.warn(
+      "[imprint] IMPRINT_NAME/IMPRINT_STREET/IMPRINT_CITY not fully configured — Impressum is legally required (§ 5 DDG).",
+    );
+    return (
+      <article className="prose prose-gray dark:prose-invert max-w-none">
+        <h1 className="text-display-sm font-semibold text-primary mb-4">
+          {t("title")}
+        </h1>
+        <p className="text-tertiary">
+          {locale === "de"
+            ? "Das Impressum ist noch nicht konfiguriert."
+            : "The imprint has not been configured yet."}
+        </p>
+      </article>
+    );
+  }
+
   return (
     <article className="prose prose-gray dark:prose-invert max-w-none">
       <h1 className="text-display-sm font-semibold text-primary mb-8">
